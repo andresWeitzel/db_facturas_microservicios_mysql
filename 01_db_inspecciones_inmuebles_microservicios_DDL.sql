@@ -1,18 +1,21 @@
-/* -------------------------------
- * -- INSPECCIONES DE INMUEBLES---
- * -------------------------------
+/* ------------------------------------------
+ * -- INSPECCIONES-INMUEBLES-MICROSERVICES---
+ * ------------------------------------------
  * 
  * 
  * ========= DDL =============
  */
 
-
+-- DATABASE
 drop database if exists db_inspecciones_inmuebles_microservicios;
+
 create database db_inspecciones_inmuebles_microservicios;
 
 use db_inspecciones_inmuebles_microservicios;
 
+-- TABLES
 drop table if exists inspecciones_inmuebles;
+
 
 
 -- ---------------------------------------------------------------------------
@@ -22,8 +25,8 @@ drop table if exists inspecciones_inmuebles;
 
 create table inspecciones_inmuebles(
 	
-id int auto_increment primary key,
-id_inmueble int not null,
+id varchar(36) primary key,       -- varchar(36) --> uuid()
+id_inmueble varchar(36) not null, -- varchar(36) --> uuid()
 estado_inspeccion enum('ACEPTADA','NO_ACEPTADA','PENDIENTE_REVISION'),
 tipo_inspeccion enum('DEPARTAMENTO','CASA','PH'),
 descripcion_inspeccion varchar(200) not null,

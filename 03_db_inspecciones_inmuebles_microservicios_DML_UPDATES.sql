@@ -1,6 +1,6 @@
-/* -------------------------------
- * -- INSPECCIONES DE INMUEBLES---
- * -------------------------------
+/* ------------------------------------------
+ * -- INSPECCIONES-INMUEBLES-MICROSERVICES---
+ * ------------------------------------------
  * 
  * 
  * ========= DML UPDATES =============
@@ -17,14 +17,16 @@ select * from inspecciones_inmuebles;
 
 -- Actualizamos descripcion de inspeccion
 update inspecciones_inmuebles set descripcion_inspeccion = 'Pendiente de Revisión'
-where id=3;
+where id='41fee049-d22a-11ec-84e4-704d7b9900d2';
 
 -- Actualizamos fecha y hora de inspeccion
-update inspecciones_inmuebles set fecha = '2021-04-12', hora = '08:15:00'
-where id=2;
+update inspecciones_inmuebles set fecha = '2021-04-12', hora = '08:00:00'
+where id='41fedec0-d22a-11ec-84e4-704d7b9900d2';
 
 -- Actualizamos costo de inspeccion
 update inspecciones_inmuebles  set costo = (costo + 1000) 
 where tipo_inspeccion = 'PH';
 
 
+
+select * from inspecciones_inmuebles;
