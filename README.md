@@ -1,7 +1,38 @@
 # Base de Datos db_inspecciones_inmuebles_microservicios
 
 * Base de Datos para el Consumo del Microservicio InspeccionInmuebleService
+* Repositorio MicroServices : https://github.com/andresWeitzel/Microservicios_Spring_Cloud_Netflix_Spring_Boot
 
+
+
+
+
+</br>
+
+#### Diagrama Entidad Relación  `db_inspecciones_inmuebles_microservicio`
+
+![Index app](https://github.com/andresWeitzel/db_inspecciones_inmuebles_microservicios_mysql/blob/master/doc/db_inspecciones_inmuebles_microservicios_DER.png)
+
+
+</br>
+
+* DBeaver implementa la Notación IDEF1X para el Diagrama Entidad Relación. En la documentación que anexa DBeaver(https://dbeaver.com/docs/wiki/ER-Diagrams/) no está del todo claro la relación que implementa. Investigando sobre las mismas, se puede concluir que la Relación Diamante y Círculo entre línea Punteada se declara como relaciónes Opcionales.
+
+![Index app](https://github.com/andresWeitzel/Administracion_Gestion_BasesDeDatos_PostgreSQL/blob/master/documentacion/relacionDeTablas.png)
+
+</br>
+
+### Vista de Registros como Ejemplificación
+#### Listado de inspecciones_inmuebles de la Tabla  `inspecciones_inmuebles` aplicando UUID
+
+![Index app](https://github.com/andresWeitzel/db_inspecciones_inmuebles_microservicios_mysql/blob/master/doc/listado_Inspecciones_Inmuebles.png)
+
+
+<hr>
+
+</br>
+
+## Más Información
 
 </br>
 
